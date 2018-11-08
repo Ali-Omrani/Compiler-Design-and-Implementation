@@ -1,0 +1,25 @@
+# Code #3
+# Syntax Analysis: OK
+# Semantic Analysis: OK
+# Output: [Nothing]
+
+# Comment
+actor Adder<4>
+    receiver init()
+        int g
+        ont c
+        int d
+        self<<test1();
+    end
+    receiver test1()
+        int a = 2
+        write(a)
+    end
+end
+
+actor B<2>
+    receiver hh()
+        int o
+        int m
+    end
+end

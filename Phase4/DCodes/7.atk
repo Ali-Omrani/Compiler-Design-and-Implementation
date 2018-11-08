@@ -1,0 +1,16 @@
+# Code #7
+# Syntax Analysis: NOK
+# Semantic Analysis: -
+# Output: -
+
+actor ActorName<4>
+    receiver init()
+        int[2] a = {1, 2}
+        int[2] b = {3, 4}
+        foreach elem1 in a
+            foreach elem2 in b
+                write(elem2)
+            end
+        end
+    end
+end

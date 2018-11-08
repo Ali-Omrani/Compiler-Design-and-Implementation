@@ -1,0 +1,35 @@
+# Code #1
+# Syntax Analysis: OK
+# Semantic Analysis: OK
+# Output: 5
+
+# Actors
+actor adder<10>
+    receiver receiverName()
+        int c
+        int b
+        b = 3
+        c = 3
+        #write("writing maximum")
+        if b>c
+            write("na1")
+        else
+            write("are1")
+        end
+
+
+        if (b==c)
+            write("are2")
+        else
+            write("na2")
+        end
+
+        if(b==c)
+            write("are3")
+        end
+        if (b>c)
+            write("na4")
+        end
+        write("are44")
+    end
+end

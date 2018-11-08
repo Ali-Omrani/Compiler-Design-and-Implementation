@@ -1,0 +1,18 @@
+# Code #9
+# Syntax Analysis: NOK
+# Semantic Analysis: -
+# Output: -
+
+actor FirstActor<4> 
+	receiver init()
+	    int[2] c = {3, 4}
+        Saghar<<joon(c)
+	end
+end
+
+actor Saghar<3>
+    receiver joon(int[2] a)
+        write(a[0])
+        write(a[1])
+    end
+end

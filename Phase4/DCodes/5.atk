@@ -1,0 +1,16 @@
+# Code #5
+# Syntax Analysis: OK
+# Semantic Analysis: OK
+# Output: [Nothing]
+
+actor ActorName<4>
+    receiver init()
+        Saghar<<joon()
+    end
+end
+
+actor Saghar<3>
+    receiver joon()
+        write(2)
+    end
+end

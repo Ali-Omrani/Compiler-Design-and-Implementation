@@ -1,0 +1,66 @@
+# Code #1
+# Syntax Analysis: OK
+# Semantic Analysis: OK
+# Output: 5
+
+# Actors
+actor adder<10>
+	# Receivers
+	receiver test1()
+        int[2][3] saghi
+        saghi[1][1] = 6
+        write(saghi[1][1])
+    end
+
+	receiver test2()
+	    char [6] name
+	    name = "saghar"
+	    name[1] = 'o'
+	    name[4] = 'i'
+	    write(name)
+	end
+
+	receiver test3()
+	    char[2][3] words
+	    words[0] = "fut"
+	    write(words[0])
+	    words[1] = "goz"
+	    write(words[1])
+	    words[1][1] = 'u'
+	    write(words[1])
+	    write(words[0][2])
+	end
+
+	receiver test4()
+	    char[3][5] myKoons
+	    myKoons[0] = read(5)
+	    myKoons[1] = read(5)
+	    myKoons[2] = read(5)
+	    write(myKoons[0])
+	    write(myKoons[1])
+	    write(myKoons[2])
+	    myKoons[0][1] = 'm'
+	    myKoons[1][0] = 'j'
+	    write(myKoons[0])
+        write(myKoons[1])
+        write(myKoons[2])
+	end
+
+	receiver test5()
+	    char[2][4][3] test
+	    test[1][2] = "fok"
+	    write(test[1][2][0])
+	    write(test[1][2])
+	end
+
+    receiver test6()
+        int a
+        int b
+        char [3][5][4] str
+        a = 1
+        b = 2
+        str[a][b+a] = "chos"
+        write(str[1][3])
+
+    end
+end

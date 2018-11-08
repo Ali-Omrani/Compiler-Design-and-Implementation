@@ -1,0 +1,27 @@
+# Code #18
+# Syntax Analysis: OK
+# Semantic Analysis: OK
+# Output: 241
+
+actor Program<2>
+	char var
+	receiver init()
+	    int b = 3
+		char var = '1'
+		begin
+			char var = '2'
+			begin
+				char var = '3'
+			end
+			write(var) # Writes 2
+		end
+		if b>3
+		    char var = '5'
+			write(var) # Writes 4
+		elseif b==3
+		    char var = '3'
+		    write(var)
+		end
+		write(var) # Writes 1
+	end
+end

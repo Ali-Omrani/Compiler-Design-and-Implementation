@@ -1,0 +1,30 @@
+# Code #8
+# Syntax Analysis: NOK
+# Semantic Analysis: -
+# Output: -
+
+actor ActorName<4>
+    receiver init()
+        int[2] a = {1,2}
+        int[3] b = {5,6,7}
+        char[5] s = "saghi"
+        char[4] g = "gooz"
+        foreach element in a
+            char[3] a = "ali"
+            write (element)
+            foreach elem2 in b
+                write(elem2)
+                write(a)
+                char [6] k = "khashi"
+                foreach elem3  in s
+                    write (elem3)
+                    write(k)
+                    write(a)
+                end
+                write(k)
+            end
+            write (a)
+        end
+        write(g)
+    end
+end

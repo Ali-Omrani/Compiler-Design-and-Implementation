@@ -1,0 +1,30 @@
+# Code #8
+# Syntax Analysis: NOK
+# Semantic Analysis: -
+# Output: -
+
+actor ActorName<4>
+    receiver init()
+        Saghar<<rec(1,7)
+        Saghar<<simple(3,6)
+        Saghar<<simple(8,4)
+        Saghar<<rec(2,5)
+        Saghar<<rec(6,6)
+    end
+end
+actor Saghar<6>
+    receiver rec(int a, int b)
+        write("--- rec ----")
+        write(a)
+        write(b)
+        if(a==b)
+            write("they are equal")
+        end
+    end
+
+    receiver simple(int a, int b)
+        write("--- simple ---")
+        write(a)
+        write(b)
+    end
+end

@@ -1,0 +1,17 @@
+# Code #8
+# Syntax Analysis: NOK
+# Semantic Analysis: -
+# Output: -
+
+actor ActorName<4>
+    receiver init()
+        int[3][2] a = {{1,2}, {2,3}, {3,4}}
+        int[3][2] b = {{1,2}, {2,3}, {3,4}}
+        write(a==b)
+        b[2][1] = 1
+        write(a==b)
+        write(a<>b)
+        b[2][1] = 4
+        write(a<>b)
+    end
+end

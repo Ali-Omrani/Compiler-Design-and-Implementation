@@ -1,0 +1,14 @@
+# Code #1
+# Syntax Analysis: OK
+# Semantic Analysis: OK
+# Output: 5
+
+# Actors
+actor adder<10>
+    receiver receiverName()
+        #failing cause of assignment
+        char [2] data
+        data = read(2)
+        write(data)
+    end
+end

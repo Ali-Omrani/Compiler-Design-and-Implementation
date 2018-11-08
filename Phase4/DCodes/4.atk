@@ -1,0 +1,32 @@
+# Code #4
+# Syntax Analysis: OK
+# Semantic Analysis: OK
+# Output: [Nothing]
+
+# Comment
+actor Adder<4>
+	receiver init()
+	    Saghar<<adder(2,3)
+	    Ali<<print(45)
+	end
+	receiver adder(int x, int y, int z)
+	    write(x+y+z)
+	end
+end
+
+actor Saghar<3>
+    receiver adder(int a, int b)
+        write(a+b)
+        Adder<<adder(5,4,3)
+        Ali<<print(9)
+    end
+end
+
+actor Ali<4>
+    receiver init()
+        write("I am Ali, I am going to print a lot of kossher from now on"
+    end
+    receiver print(int a)
+        write(a)
+    end
+end

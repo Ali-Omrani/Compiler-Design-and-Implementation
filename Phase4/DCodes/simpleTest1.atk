@@ -1,0 +1,18 @@
+# Code #1
+# Syntax Analysis: OK
+# Semantic Analysis: OK
+# Output: 5
+
+# Actors
+actor adder<10>
+    receiver receiverName()
+        #int a
+        #int b
+        #write(b=3)
+        #a=2
+        #b=3
+        char khar
+        khar = 'n'
+        write(khar)
+    end
+end

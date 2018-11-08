@@ -1,0 +1,46 @@
+# Code #10
+# Syntax Analysis: OK
+# Semantic Analysis: OK
+# Output: [Nothing]
+
+actor ActorName<4> # Actor definition
+    receiver init()
+        self<<CalcSumUpToZero(2,3)
+    end
+	receiver CalcSumUpToZero(int arg1, int arg2) # Receiver definition
+	    int[3] b
+	    b = {1, 2, 3}
+		char[5] g
+		g = "abcde"
+		write("---------")
+		write(g)
+	    write(b[0])
+	    write(b[1])
+	    write(b[2])
+	    write("---------")
+	    foreach elem1 in g
+	        write(elem1)
+	    end
+	    write("---------")
+	    write(g)
+	    write("---------")
+	    foreach elem2 in b
+            write(elem2)
+        end
+        Ali<<nestedFor()
+	end
+end
+actor Ali<3>
+    receiver nestedFor()
+    write("going to write in loop")
+        int[2] a = {1, 2}
+        int[2] c = {3, 4}
+        foreach elem1 in a
+            foreach elem2 in c
+                write(elem1)
+                write(elem2)
+            end
+        end
+    write("end of write in loop")
+    end
+end

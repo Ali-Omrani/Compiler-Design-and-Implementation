@@ -1,0 +1,37 @@
+# Code #1
+# Syntax Analysis: OK
+# Semantic Analysis: OK
+# Output: 5
+
+# Actors
+actor adder<10>
+    receiver receiverName()
+        int a
+        int b
+        int c
+        a = 2 + 3 * 6 / 9
+        c = b = a
+        write("c:")
+        write(c)
+        write("b:")
+        write(b)
+        a = 2
+        b = 3
+        c = 3
+        write("b>a")
+        write(b>a)
+        write("a>b")
+        write(a>b)
+        write("b==a")
+        write(b==a)
+        write("b==c")
+        write(b==c)
+        write("b<>c")
+        write(b<>c)
+        write("a+1")
+        write(a+1)
+        write("(b==a)+2")
+        write((b==a)+2)
+    end
+end
+

@@ -1,0 +1,13 @@
+# Code #1
+# Syntax Analysis: OK
+# Semantic Analysis: OK
+# Output: 5
+
+# Actors
+actor adder<10>
+    receiver receiverName()
+        write('c')
+        write(10)
+        write("ali")
+    end
+end

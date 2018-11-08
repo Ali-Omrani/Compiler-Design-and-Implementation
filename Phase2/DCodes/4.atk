@@ -1,0 +1,62 @@
+# Code #4
+# Syntax Analysis: OK
+# Semantic Analysis: OK
+# Output: [Nothing]
+
+# Comment
+actor Adder<4>
+	receiver add(int x, int y)
+		int z
+		int z
+		int y
+		write(x + y)
+	end
+
+	receiver add(int x, int y)
+		int z
+		int y
+		write(x + y)
+	end
+	receiver add(int x, int y)
+		int z
+
+		int y
+		write(x + y)
+	end
+	receiver add(int x, int y, int z)
+		write(x + y + z)
+	end
+
+	receiver add(int x, int y, int z)
+    x = 2*y
+		write(x + y + z)
+	end
+	receiver add(int x, int y, int z)
+		write(x + y + z)
+	end
+
+end
+
+actor alaki<4>
+	receiver add(int x, int y)
+		int z
+		int z
+		int y
+		write(x + y)
+	end
+
+	receiver add(int x, int y)
+		int z
+
+		int y
+		write(x + y)
+	end
+	receiver add(int x, int y, int z)
+		write(x + y + z)
+	end
+
+	receiver add(int x, int y, int z)
+		write(x + y + z)
+	end
+
+end

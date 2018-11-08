@@ -1,0 +1,33 @@
+# Code #17
+# Syntax Analysis: OK
+# Semantic Analysis: OK
+# Output: [Nothing]
+
+actor Math<10>
+
+
+	receiver calcSumUpToZero(int[10] array)
+		int sum = 0
+		sum + 2 = 10
+		char [4] bb = read(4)
+		char ali
+		array[2] = 3
+		foreach element in "alik"
+			if element <> ali
+				sum = sum + 2
+			else
+				break
+				break
+			end
+			break
+		end
+		break
+		int [2][5] ss
+		write("koonkoon")
+		sender << calcSumUpToZeroCompleted(sum)
+	end
+	receiver init(int gholghol)
+	    int [10] b
+	    sender << cacalcSumUpToZero(b)
+	end
+end

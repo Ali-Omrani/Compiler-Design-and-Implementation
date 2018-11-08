@@ -1,0 +1,31 @@
+# Code #14
+# Syntax Analysis: OK
+# Semantic Analysis: NOK
+# Output: -
+
+actor Ali<1>
+    int saghar = 2
+    int ali = 4
+    receiver ping(int a, char b, int[2][3] c)
+        saghar = ali
+    end
+
+end
+actor Saghar<1>
+    int first = 1
+    int second = 2
+    int[1][2][3] myArray
+    int g
+    int m
+    char o
+    char khar
+	receiver init()
+        if m>g
+            Ali<<ping(g, o, myArray[0])
+        end
+	end
+
+	receiver pong(int a)
+
+	end
+end

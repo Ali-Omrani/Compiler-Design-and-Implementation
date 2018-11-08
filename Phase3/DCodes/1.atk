@@ -1,0 +1,21 @@
+# Code #1
+# Syntax Analysis: OK
+# Semantic Analysis: OK
+# Output: 5
+
+# Actors
+actor adder<10>
+	# Variables
+	int addsCount
+    char khar
+
+	# Receivers
+	receiver init()
+        addsCount + c
+        c + addsCount
+        khar + addsCount
+        addsCount + khar
+        khar + khar
+        addsCount + khar + khar
+	end
+end
